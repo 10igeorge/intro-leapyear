@@ -3,7 +3,9 @@ describe('leapYear', function() {
     expect(leapYear(1993)).to.equal(false);
   });
   it("is divisible by 4", function() {
-  expect(leapYear(2004)).to.equal(true);
+    expect(leapYear(2004)).to.equal(true);
   });
-
+  it("is divisible by 100", function() {
+    expect(leapYear(1900)).to.equal(false);
+  });
 });
