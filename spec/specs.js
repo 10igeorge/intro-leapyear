@@ -8,4 +8,7 @@ describe('leapYear', function() {
   it("is divisible by 100", function() {
     expect(leapYear(1900)).to.equal(false);
   });
+  it("is divisible by 400", function() {
+    expect(leapYear(2000)).to.equal(true);
+  });
 });
