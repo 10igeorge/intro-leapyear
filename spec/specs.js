@@ -1,4 +1,7 @@
 describe('leapYear', function() {
+  it("is a series of letters" , function() {
+    expect(leapYear()).to.equal(false);
+  });
   it("is false for a year that is not divisble by 4, 100, or 400", function() {
     expect(leapYear(1993)).to.equal(false);
   });
